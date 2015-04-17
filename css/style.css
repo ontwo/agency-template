@@ -1,0 +1,71 @@
+/* ==================================================
+   FONTS & CSS
+   ================================================== */
+/* ==================================================
+   CSS RESET
+   ==================================================*/
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    line-height: 1;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1em;
+}
+
+button {
+    font-family:;
+    padding: 0;
+    border: none;
+    line-height: 1;
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    border: none;
+}
+
+fieldset {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+label {
+    cursor: pointer;
+}
+
+input {
+    padding: 0;
+    font-family:;
+    font-weight:;
+    font-size:;
+}
+
+input[type=text],
+input[type=email],
+input[type=submit],
+input[type=password] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+textarea {
+    padding: 0;
+    margin: 0;
+    resize: none;
+    font-family:;
+    overflow: hidden; /* hide scroll line for IE */
+}
+
+strong {
+    font-weight: 500;
+}
