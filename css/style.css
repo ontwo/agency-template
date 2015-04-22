@@ -1,6 +1,4 @@
-/* ==================================================
-   FONTS & CSS
-   ================================================== */
+
 /* ==================================================
    CSS RESET
    ==================================================*/
@@ -22,10 +20,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 button {
-    font-family:;
     padding: 0;
     border: none;
-    line-height: 1;
     cursor: pointer;
 }
 
@@ -45,9 +41,6 @@ label {
 
 input {
     padding: 0;
-    font-family:;
-    font-weight:;
-    font-size:;
 }
 
 input[type=text],
@@ -62,10 +55,142 @@ textarea {
     padding: 0;
     margin: 0;
     resize: none;
-    font-family:;
     overflow: hidden; /* hide scroll line for IE */
 }
 
 strong {
     font-weight: 500;
 }
+
+/* ==================================================
+   TYPOGRAPHY & STRUCTURE
+   ================================================== */
+    body, button, input, textarea{
+        font-family: 'Open Sans', sans-serif;
+        line-height: 1;
+    }
+    body{
+        font-size: 1.4em;
+    }
+    h1{
+        padding: 0;
+        margin: 0;
+        font-size: 3.143em;
+    }
+    .layout-wrapper-center{
+        width: 1170px;
+        margin: 0 auto;
+    }
+    .clear:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+/* ==================================================
+   BUTTONS
+   ================================================== */
+
+
+/* ==================================================
+   HEADER
+   ================================================== */
+.header{
+    padding: 20px 0 10px;
+    background-color: #d84d3a;
+    color: #fdfdfe;
+}
+    /* LOGO
+    --------*/
+    .logo-holder{
+        float: left;
+        padding-left: 39px;
+        background: url("../img/icon_logo.png") no-repeat 0 50%;
+    }
+        .logo-link{
+            color: #fdfdfe;
+            text-decoration: none;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .logo-description{
+            display: block;
+            font-family: 'Marvel', sans-serif;
+            font-size: .545em;
+        }
+
+    /* NAVIGATION
+    --------------*/
+    .nav{
+        float: right;
+        max-width: 700px;
+        font-family: 'Marvel', sans-serif;
+        font-size: 1.929em;
+    }
+        .nav-item{
+            position: relative; /* for border under menu item, navigation */
+            display: inline-block;
+            margin-right: 30px;
+            list-style: none;
+        }
+            .nav-item:last-child{
+                margin-right: 0;
+            }
+            .nav-item-link{
+                color: #7d261a;
+                text-decoration: none;
+                transition: color .3s linear 0s;
+            }
+            .nav-item-link-current,
+            .nav-item-link:hover{
+                color: #fff;
+            }
+
+            /* border under menu item */
+            .nav-item-link-current:after,
+            .nav-item-link:hover:after{
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -37px;
+                display: block;
+                width: 100%;
+                height: 3px;
+                background-color: #dbb3ae;
+            }
+
+            /* SUB NAVIGATION */
+            .sub-nav {
+                position: absolute;
+                display: none;
+                padding: 20px 0;
+                margin: 0;
+                font-family: 'Open Sans', sans-serif;
+            }
+                .sub-nav-item {
+                    padding: 10px 0;
+                    list-style: none;
+                    font-size: .519em;
+                    text-align: center;
+                }
+                    .sub-nav-item-link{
+                        color: #fff;
+                        text-decoration: none;
+                    }
+
+            /* sub nav level 1 */
+            .nav-item > .sub-nav{
+                left: 50%;
+                bottom: -170px;
+                min-width: 158px;
+                margin-left: -79px;
+                background-color: #d84d3a;
+                transition: all .4s ease;
+            }
+
+            .nav-item:hover > .sub-nav {
+                display: block;
+                bottom: -270px;
+            }
+
+
+
+
