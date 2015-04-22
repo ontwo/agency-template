@@ -1,42 +1,50 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>Build-Up - Home page</title>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
         <meta name="description" content="#">
-        <link rel="stylesheet" type="text/css" href="">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href='http://fonts.googleapis.com/css?family=Marvel:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <!-- header -->
-        <div class="header">
-            <div class="logo">
-                <a class="logo-link" href="#">Build-Up</a>
-                <p>your advertising agency</p>
-            </div>
-            <!-- navigation -->
-            <ul class="nav">
-                <li class="nav-item"><a class="nav-item-link nav-item-link-current">Home</a>
-                    <ul class="nav-level-1">
-                        <li class="nav-level-1-item"><a class="nav-level-1-item-link">Lorem Ipsum</a></li>
-                        <li class="nav-level-1-item"><a class="nav-level-1-item-link">Lorem Ipsum</a>
-                            <ul class="nav-level-2">
-                                <li class="nav-level-2-item"><a class="nav-level-2-item-link">Lorem Ipsum</a></li>
-                                <li class="nav-level-2-item"><a class="nav-level-2-item-link">Lorem Ipsum</a></li>
-                                <li class="nav-level-2-item"><a class="nav-level-2-item-link">Lorem Ipsum</a></li>
+        <header class="header">
+            <div class="layout-wrapper-center clear">
+                <!-- logo -->
+                <section class="logo-holder">
+                    <h1>
+                        <a class="logo-link" href="index.html">Build-Up</a>
+                        <span class="logo-description">your advertising agency</span>
+                    </h1>
+                </section><!-- logo -->
+                <!-- navigation -->
+                <nav>
+                    <ul class="nav">
+                        <li class="nav-item"><a class="nav-item-link nav-item-link-current" href="index.html">Home</a>
+                            <ul class="sub-nav">
+                                <li class="sub-nav-item"><a class="sub-nav-item-link" href="#">Lorem Ipsum</a></li>
+                                <li class="sub-nav-item"><a class="sub-nav-item-link" href="#">Lorem Ipsum</a>
+                                    <ul class="sub-nav">
+                                        <li class="sub-nav-item"><a class="sub-nav-item-link" href="#">Lorem Ipsum</a></li>
+                                        <li class="sub-nav-item"><a class="sub-nav-item-link" href="#">Lorem Ipsum</a></li>
+                                        <li class="sub-nav-item"><a class="sub-nav-item-link" href="#">Lorem Ipsum</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sub-nav-item"><a class="sub-nav-item-link" href="#">Lorem Ipsum</a></li>
                             </ul>
                         </li>
-                        <li class="nav-level-1-item"><a class="nav-level-1-item-link">Lorem Ipsum</a></li>
+                        <li class="nav-item"><a class="nav-item-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-item-link" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-item-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-item-link" href="contacts.html">Contacts</a></li>
                     </ul>
-                </li>
-                <li class="nav-item"><a class="nav-item-link">About</a></li>
-                <li class="nav-item"><a class="nav-item-link">Projects</a></li>
-                <li class="nav-item"><a class="nav-item-link">Services</a></li>
-                <li class="nav-item"><a class="nav-item-link">Contacts</a></li>
-            </ul><!-- navigation -->
-        </div><!-- header -->
+                </nav><!-- navigation -->
+            </div>
+        </header><!-- header -->
         <!-- content -->
-        <div class="content">
+        <section class="content" role="main">
             <!-- slider -->
             <div class="slider">
                 <ul class="slider-controls">
@@ -56,7 +64,90 @@
                     </ul>
                 </div>
             </div><!-- slider -->
-        </div><!-- content -->
+            <!-- about -->
+            <section class="index-about">
+                <h2>Welcome to Our Agency</h2>
+                <h3><a href="#">Nullam Concester Tur Nerto</a></h3>
+                <p>
+                    Gamus at magna non nunc tristique rhoncuseri tym. Aliquam nibh ante, egestas id dictum aterert commodo re luctus libero.
+                    Praesent faucibus malesuada cibuste. Donec laoreet metus id laoreet malesuada. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Nullam consectetur orci sed rabitur vel lorem sit amet nulla ullamcorper fermentum.
+                </p>
+                <p>
+                    In vitae varius augue, eu consectetur ligula. Etiam dui eros, laoreet sit amet est vel,
+                    commodo venenatis eros. Donec laoreet metus id laoreet malesuada. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit.
+                </p>
+                <a class="btn" href="#">more</a>
+            </section><!-- about -->
+            <!-- services -->
+            <section class="index-services">
+                <h3>services</h3>
+                <nav>
+                    <ul class="sevices-nav">
+                        <li class="services-nav-item"><a class="services-nav-item-link" href="#">Branding</a></li>
+                        <li class="services-nav-item"><a class="services-nav-item-link" href="#">Graphic Design</a></li>
+                        <li class="services-nav-item"><a class="services-nav-item-link" href="#">Film + Video</a></li>
+                        <li class="services-nav-item"><a class="services-nav-item-link" href="#">Social Media</a></li>
+                        <li class="services-nav-item"><a class="services-nav-item-link" href="#">Website Marketing</a></li>
+                        <li class="services-nav-item"><a class="services-nav-item-link" href="#">Media & Design</a></li>
+                    </ul>
+                </nav>
+            </section><!-- services -->
+            <!-- projects -->
+            <section class="index-projects">
+                <ul class="projects-list">
+                    <li class="projects-list-item"><img src="#" alt="img alt"></li>
+                    <li class="projects-list-item"><img src="#" alt="img alt"></li>
+                    <li class="projects-list-item"><img src="#" alt="img alt"></li>
+                    <li class="projects-list-item"><img src="#" alt="img alt"></li>
+                    <li class="projects-list-item"><img src="#" alt="img alt"></li>
+                    <li class="projects-list-item"><img src="#" alt="img alt"></li>
+                </ul>
+            </section><!-- projects -->
+            <!-- news -->
+            <section class="index-news">
+                <h2>news</h2>
+                <article class="news-item">
+                    <h3>february <time datetime="#">2015</time></h3>
+                    <p>
+                        Gamus at magna non nunc tristique rhoncuseri tym. Aliquam nibh ante, egestas id dictum aterert commodo re
+                        luctus libero. Praesent faucibus malesuada cibuste.
+                    </p>
+                    <a class="btn" href="#">more</a>
+                </article>
+                <article class="news-item">
+                    <h3>march <time datetime="#">2015</time></h3>
+                    <p>
+                        Damus at magna non nunc tristique rhoncuseri tym. Aliquam nibh ante, egestas id dictum aterert commodo re
+                        luctus libero. Praesent faucibus malesuada cibuste.
+                    </p>
+                    <a class="btn" href="#">more</a>
+                </article>
+                <article class="news-item">
+                    <h3>april <time datetime="#">2015</time></h3>
+                    <p>
+                        Jamus at magna non nunc tristique rhoncuseri tym. Aliquam nibh ante, egestas id dictum aterert commodo re
+                        luctus libero. Praesent faucibus malesuada cibuste.
+                    </p>
+                    <a class="btn" href="#">more</a>
+                </article>
+            </section><!-- news -->
+        </section><!-- content -->
+        <!-- footer -->
+        <footer>
+            <section>
+                <h2>Follow us</h2>
+                <ul class="socials">
+                    <li class="socilas-item"><a class="socials-item-link" href="#"></a></li>
+                    <li class="socilas-item"><a class="socials-item-link" href="#"></a></li>
+                    <li class="socilas-item"><a class="socials-item-link" href="#"></a></li>
+                </ul>
+            </section>
+            <p>&copy; 2015</p>
+        </footer><!-- footer -->
+        <button class="btn-up"></button>
+
     </body>
 </html>
         
