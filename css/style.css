@@ -77,6 +77,24 @@ strong {
         margin: 0;
         font-size: 3.143em;
     }
+    h2{
+        font-size: 5.143em;
+        font-weight: 300;
+        text-align: center;
+    }
+        h2 span{
+            position: relative;
+        }
+        h2 span:before{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: #000;
+        }
     .layout-wrapper-center{
         width: 1170px;
         margin: 0 auto;
@@ -126,7 +144,7 @@ strong {
         font-size: 1.929em;
     }
         .nav-item{
-            position: relative; /* for border under menu item, navigation */
+            position: relative; /* for border under menu item, sub navigation */
             display: inline-block;
             margin-right: 30px;
             list-style: none;
@@ -158,39 +176,124 @@ strong {
             }
 
             /* SUB NAVIGATION */
+            .nav-item .sub-nav{
+
+            }
             .sub-nav {
                 position: absolute;
-                display: none;
+                display: block;
+                min-width: 158px;
                 padding: 20px 0;
                 margin: 0;
                 font-family: 'Open Sans', sans-serif;
             }
                 .sub-nav-item {
+                    position: relative; /* for other sub nav */
                     padding: 10px 0;
                     list-style: none;
-                    font-size: .519em;
                     text-align: center;
+
                 }
                     .sub-nav-item-link{
                         color: #fff;
                         text-decoration: none;
+                        transition: color .3s linear;
                     }
 
             /* sub nav level 1 */
-            .nav-item > .sub-nav{
+            .nav-item-link + .sub-nav{
                 left: 50%;
-                bottom: -170px;
-                min-width: 158px;
+                top: 75px;
                 margin-left: -79px;
                 background-color: #d84d3a;
-                transition: all .4s ease;
+                font-size: .519em;
             }
-
-            .nav-item:hover > .sub-nav {
+            .nav-item-link:hover + .sub-nav {
                 display: block;
-                bottom: -270px;
+            }
+            .nav-item-link + .sub-nav:before{ /* triangle on top */
+                content: "";
+                position: absolute;
+                top: -10px;
+                left: 50%;
+                width: 0;
+                height: 0;
+                margin-left: -7px;
+                border-left: 7px solid transparent;
+                border-right: 7px solid transparent;
+                border-bottom: 10px solid #d84d3a;
+            }
+            .nav-item-link + .sub-nav > .sub-nav-item > .sub-nav-item-link:hover{
+                color: #7d261a;
             }
 
+            /* sub menu level 2 */
+            .sub-nav-item > .sub-nav{
+                top: 0;
+                left: 101%;
+                background-color: #dab2ad;
+            }
+                .sub-nav .sub-nav .sub-nav-item-link:hover{
+                    color: #d74d3a;
+                }
 
+/* ==================================================
+   CONTENT
+   ================================================== */
 
+/* SLIDER
+----------*/
+.slider{
+    position: relative; /* for controls */
+}
+    /* IMAGES  */
+    .slider-img-wrapper{
+        padding: 0;
+        margin: 0;
+    }
+        .slider-img-item{
+            list-style: none;
+        }
+            .slider-img{
+                max-width: 100%;
+            }
 
+    /* CONTROLS */
+    .slider-controls{
+        position: absolute;
+        top: 150px;
+        left: 50%;
+        width: 300px;
+        padding: 0;
+        margin: 0 0 0 -150px;
+        text-align: center;
+    }
+        .slider-controls-item{
+            list-style: none;
+            display: inline-block;
+            width: 19px;
+            height: 19px;
+            border: 2px solid #5b605f;
+            border-radius: 50%;
+            background-color: #5b605f;
+            cursor: pointer;
+        }
+        .slider-controls-item:hover{
+            border-color: #e64c3c;
+        }
+        .slider-controls-item-current{
+            background-color: #e64c3c;
+            border-color: #e64c3c;
+        }
+
+    /* CONTACTS */
+    .slider-contacts-wrapper{
+        display: none;
+    }
+
+/* SECTION
+-----------*/
+.section{
+    padding-top: 50px;
+    background-color: #fdfdfe;
+}
